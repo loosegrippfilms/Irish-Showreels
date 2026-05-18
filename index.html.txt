@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Irish Showreels</title>
 
 <style>
-body{
-background:black;
-color:white;
-font-family:Arial;
-text-align:center;
-padding:100px;
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 100px;
 }
 
-h1{
-font-size:70px;
-text-transform:uppercase;
+h1 {
+  font-size: 70px;
+  text-transform: uppercase;
 }
 
-p{
-font-size:24px;
+p {
+  font-size: 24px;
 }
 </style>
 
