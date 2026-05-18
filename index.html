@@ -1,41 +1,225 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Irish Showreels</title>
 
 <style>
-body {
-  margin: 0;
-  background: black;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 100px;
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:black;
+color:white;
+overflow-x:hidden;
 }
 
-h1 {
-  font-size: 70px;
-  text-transform: uppercase;
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.85)),
+url('https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1600&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
 }
 
-p {
-  font-size: 24px;
+.hero-content{
+max-width:900px;
 }
+
+h1{
+font-size:90px;
+margin-bottom:20px;
+text-transform:uppercase;
+letter-spacing:5px;
+}
+
+.tagline{
+font-size:28px;
+line-height:1.6;
+margin-bottom:40px;
+color:#ddd;
+}
+
+.button{
+display:inline-block;
+padding:18px 40px;
+border:2px solid white;
+color:white;
+text-decoration:none;
+text-transform:uppercase;
+transition:0.3s;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.button:hover{
+background:white;
+color:black;
+}
+
+section{
+padding:100px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+font-size:50px;
+text-transform:uppercase;
+margin-bottom:40px;
+color:#c0392b;
+text-align:center;
+}
+
+.about-text{
+font-size:22px;
+line-height:1.8;
+color:#ccc;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:#111;
+padding:40px;
+border-radius:20px;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#c0392b;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.card p{
+font-size:18px;
+line-height:1.7;
+color:#bbb;
+}
+
+.footer{
+padding:60px 20px;
+text-align:center;
+border-top:1px solid #222;
+color:#888;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:50px;
+}
+
+.tagline{
+font-size:22px;
+}
+
+h2{
+font-size:38px;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
+<div class="hero">
+
+<div class="hero-content">
+
 <h1>Irish Showreels</h1>
 
-<p>
+<p class="tagline">
 Showreels, headshots, creative content,
 actors agency, casting directors.
 </p>
 
+<a href="#" class="button">View Talent</a>
+
+</div>
+
+</div>
+
+<section>
+
+<h2>About</h2>
+
+<p class="about-text">
+
+Irish Showreels is a boutique cinematic studio and actors agency specialising in premium showreels, headshots, creative content and talent representation for film, television, theatre and commercial work.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Showreels</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Original Scripts</h3>
+
+<p>
+Tailored cinematic scenes written specifically for performers and casting goals.
+</p>
+</div>
+
+<div class="card">
+<h3>Professional Filming</h3>
+
+<p>
+Industry-quality filming and direction designed to showcase performance at the highest level.
+</p>
+</div>
+
+<div class="card">
+<h3>Editing & Delivery</h3>
+
+<p>
+Cinematic editing, colour grading and polished delivery ready for casting professionals.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
+
+Irish Showreels © 2025
+
+</div>
+
 </body>
+
 </html>
