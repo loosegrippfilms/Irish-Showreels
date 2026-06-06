@@ -156,7 +156,83 @@ font-size:38px;
 }
 
 }
+.archive-strip{
 
+display:flex;
+justify-content:center;
+padding:35px 0;
+
+}
+
+.archive-film{
+
+width:min(900px,90vw);
+height:72px;
+
+background:#151515;
+
+border-radius:10px;
+
+box-shadow:
+0 12px 30px rgba(0,0,0,.45);
+
+position:relative;
+
+transform:rotate(-0.6deg);
+
+opacity:.85;
+
+animation:archiveFloat 18s ease-in-out infinite alternate;
+
+}
+
+.archive-film::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+right:0;
+top:8px;
+bottom:8px;
+
+background:
+
+repeating-linear-gradient(
+90deg,
+
+transparent 0 18px,
+
+rgba(255,255,255,.06) 18px 20px,
+
+transparent 20px 110px
+
+);
+
+opacity:.5;
+
+}
+
+@keyframes archiveFloat{
+
+from{
+
+transform:
+rotate(-0.6deg)
+translateX(-4px);
+
+}
+
+to{
+
+transform:
+rotate(0.4deg)
+translateX(4px);
+
+}
+
+}
 </style>
 
 </head>
